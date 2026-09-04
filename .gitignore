@@ -12,3 +12,4 @@ allure-results/
 .allure/
 test-output/
 CHAT_SESSION_DOCUMENTATION.md
+COMPLETE_CHAT_TRANSCRIPT.md
