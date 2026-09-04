@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Exercise - 26 Scenarios Full Suite" verbose="2">
+    <listeners>
+        <listener class-name="com.ecommerce.listeners.AllureListener"/>
+    </listeners>
+
+    <test name="Framework Unit Tests">
+        <classes>
+            <class name="com.ecommerce.tests.FrameworkUnitTest"/>
+        </classes>
+    </test>
+
+    <test name="Authentication Tests (TC 1 to 5)">
+        <classes>
+            <class name="com.ecommerce.tests.AuthenticationTest"/>
+        </classes>
+    </test>
+
+    <test name="Contact Us Tests (TC 6)">
+        <classes>
+            <class name="com.ecommerce.tests.ContactUsTest"/>
+        </classes>
+    </test>
+
+    <test name="Navigation and UI Component Tests (TC 7, 10, 11, 25, 26)">
+        <classes>
+            <class name="com.ecommerce.tests.NavigationAndMiscTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Catalog &amp; Discovery Tests (TC 8, 9, 18, 19, 21)">
+        <classes>
+            <class name="com.ecommerce.tests.ProductCatalogTest"/>
+        </classes>
+    </test>
+
+    <test name="Shopping Cart &amp; Persistence Tests (TC 12, 13, 17, 20, 22)">
+        <classes>
+            <class name="com.ecommerce.tests.CartTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Placement &amp; Checkout Tests (TC 14, 15, 16, 23, 24)">
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Excel Data-Driven Checkout Tests">
+        <classes>
+            <class name="com.ecommerce.tests.DataDrivenCheckoutTest"/>
+        </classes>
+    </test>
+</suite>

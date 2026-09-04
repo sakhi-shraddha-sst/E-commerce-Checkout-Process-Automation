@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Cross-Browser Parallel Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.ecommerce.listeners.AllureListener"/>
+    </listeners>
+
+    <!-- Chrome Test Execution -->
+    <test name="Chrome E2E Checkout Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runMode" value="local"/>
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+            <class name="com.ecommerce.tests.DataDrivenCheckoutTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Test Execution -->
+    <test name="Firefox E2E Checkout Tests">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="runMode" value="local"/>
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>

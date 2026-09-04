@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cloud Cross-Browser Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.ecommerce.listeners.AllureListener"/>
+    </listeners>
+
+    <!-- Chrome on Cloud (BrowserStack / Sauce Labs) -->
+    <test name="Cloud Test - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runMode" value="browserstack"/>
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox on Cloud (BrowserStack / Sauce Labs) -->
+    <test name="Cloud Test - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="runMode" value="browserstack"/>
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>

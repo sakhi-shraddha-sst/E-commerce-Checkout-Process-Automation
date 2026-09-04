@@ -1,0 +1,15 @@
+[
+  {
+    "name": "☁️ Cloud Infrastructure & Concurrency Defects",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*(SessionNotCreated|concurrent session limit|WebDriverException|timeout|cloud|hub).*"
+  },
+  {
+    "name": "❌ Product Defects (Functional Assertion Failures)",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "⚙️ Automation Script / Configuration Defects",
+    "matchedStatuses": ["broken"]
+  }
+]

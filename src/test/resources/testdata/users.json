@@ -1,0 +1,20 @@
+{
+  "standardUser": {
+    "name": "Standard Tester",
+    "email": "autotest_user_pom@example.com",
+    "password": "ENC(bS4Vv1W7Y4wQx8P90vPqg==)",
+    "firstName": "Standard",
+    "lastName": "Tester",
+    "company": "Enterprise QA Corp",
+    "address": "100 Innovation Way",
+    "country": "United States",
+    "state": "California",
+    "city": "San Jose",
+    "zipcode": "95110",
+    "mobile": "4085550199"
+  },
+  "invalidUser": {
+    "email": "invalid_unregistered_tester@example.com",
+    "password": "WrongPassword@999"
+  }
+}

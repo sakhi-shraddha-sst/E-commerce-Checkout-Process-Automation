@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Grid Parallel Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.ecommerce.listeners.AllureListener"/>
+    </listeners>
+
+    <!-- Chrome on Selenium Grid -->
+    <test name="Selenium Grid - Chrome Node">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runMode" value="grid"/>
+        <classes>
+            <class name="com.ecommerce.tests.AuthenticationTest"/>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox on Selenium Grid -->
+    <test name="Selenium Grid - Firefox Node">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="runMode" value="grid"/>
+        <classes>
+            <class name="com.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
